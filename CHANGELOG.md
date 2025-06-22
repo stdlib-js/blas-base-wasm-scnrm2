@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`bac5dfa`](https://github.com/stdlib-js/stdlib/commit/bac5dfaf33f0d0b07988126ef565c726b56cf447) - **test:** update test expected values [(#7449)](https://github.com/stdlib-js/stdlib/pull/7449) _(by Shabareesh Shetty)_
 -   [`68d705a`](https://github.com/stdlib-js/stdlib/commit/68d705a06a2ccf8c292b85a53b091e461ff90c14) - **feat:** add `blas/base/wasm/scnrm2` [(#6791)](https://github.com/stdlib-js/stdlib/pull/6791) _(by Shabareesh Shetty, Athan Reines, stdlib-bot)_
 
 </details>
