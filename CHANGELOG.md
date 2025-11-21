@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-11-19)
+## Unreleased (2025-11-21)
 
 <section class="features">
 
@@ -32,6 +32,7 @@
 
 <details>
 
+-   [`e62f498`](https://github.com/stdlib-js/stdlib/commit/e62f498b2bad582476862a5872115ae22152fe88) - **docs:** fix example code and return annotations in TSDoc examples _(by Philipp Burckhardt)_
 -   [`73e4725`](https://github.com/stdlib-js/stdlib/commit/73e4725ad922926de4747c08a8121c99ef8a548d) - **style:** remove extraneous empty line _(by Philipp Burckhardt)_
 -   [`9dcd7d5`](https://github.com/stdlib-js/stdlib/commit/9dcd7d54bc8f6ea733d78806d97ade2c0c159a7c) - **fix:** ensure correct `this` context when creating a new Module instance _(by Philipp Burckhardt)_
 -   [`aaee349`](https://github.com/stdlib-js/stdlib/commit/aaee349836bc2324f9ce4e3428bc5828f28e372c) - **docs:** round return annotation values correctly _(by Philipp Burckhardt)_
