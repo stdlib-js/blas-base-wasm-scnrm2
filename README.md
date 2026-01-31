@@ -35,14 +35,32 @@ limitations under the License.
 
 > Calculate the L2-norm of a complex single-precision floating-point vector.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/blas-base-wasm-scnrm2
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import scnrm2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-scnrm2@deno/mod.js';
+var scnrm2 = require( '@stdlib/blas-base-wasm-scnrm2' );
 ```
 
 #### scnrm2.main( N, x, strideX )
@@ -50,7 +68,7 @@ import scnrm2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-scnrm2@
 Calculates the L2-norm of a complex single-precision floating-point vector.
 
 ```javascript
-import Complex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@deno/mod.js';
+var Complex64Array = require( '@stdlib/array-complex64' );
 
 var x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 
@@ -67,7 +85,7 @@ The function has the following parameters:
 The `N` and stride parameters determine which elements in the input strided array are accessed at runtime. For example, to compute the L2-norm of every other element in `x`,
 
 ```javascript
-import Complex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@deno/mod.js';
+var Complex64Array = require( '@stdlib/array-complex64' );
 
 var x = new Complex64Array( [ 1.0, 2.0, 2.0, -7.0, -2.0, 3.0, 4.0, 2.0 ] );
 
@@ -80,7 +98,7 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 <!-- eslint-disable stdlib/capitalized-comments -->
 
 ```javascript
-import Complex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@deno/mod.js';
+var Complex64Array = require( '@stdlib/array-complex64' );
 
 // Initial array:
 var x0 = new Complex64Array( [ 2.0, 1.0, 2.0, 2.0, -2.0, -2.0, 2.0, 3.0 ] );
@@ -97,7 +115,7 @@ var z = scnrm2.main( 2, x1, 2 );
 Calculates the L2-norm of a complex single-precision floating-point vector using alternative indexing semantics.
 
 ```javascript
-import Complex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@deno/mod.js';
+var Complex64Array = require( '@stdlib/array-complex64' );
 
 var x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 
@@ -112,7 +130,7 @@ The function has the following additional parameters:
 While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameter supports indexing semantics based on a starting index. For example, to calculate the L2-norm for every other value in `x` starting from the second value,
 
 ```javascript
-import Complex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@deno/mod.js';
+var Complex64Array = require( '@stdlib/array-complex64' );
 
 var x = new Complex64Array( [ 2.0, 1.0, 2.0, 2.0, -2.0, -2.0, 2.0, 3.0 ] );
 
@@ -131,7 +149,7 @@ Returns a new WebAssembly [module wrapper][@stdlib/wasm/module-wrapper] instance
 <!-- eslint-disable node/no-sync -->
 
 ```javascript
-import Memory from 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-memory@deno/mod.js';
+var Memory = require( '@stdlib/wasm-memory' );
 
 // Create a new memory instance with an initial size of 10 pages (640KiB) and a maximum size of 100 pages (6.4MiB):
 var mem = new Memory({
@@ -154,9 +172,9 @@ Computes the L2-norm of a complex single-precision floating-point vector.
 <!-- eslint-disable node/no-sync -->
 
 ```javascript
-import Memory from 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-memory@deno/mod.js';
-import oneTo from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-one-to@deno/mod.js';
-import Complex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@deno/mod.js';
+var Memory = require( '@stdlib/wasm-memory' );
+var oneTo = require( '@stdlib/array-one-to' );
+var Complex64Array = require( '@stdlib/array-complex64' );
 
 // Create a new memory instance with an initial size of 10 pages (640KiB) and a maximum size of 100 pages (6.4MiB):
 var mem = new Memory({
@@ -203,9 +221,9 @@ Computes the L2-norm of a complex single-precision floating-point vector using a
 <!-- eslint-disable node/no-sync -->
 
 ```javascript
-import Memory from 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-memory@deno/mod.js';
-import oneTo from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-one-to@deno/mod.js';
-import Complex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@deno/mod.js';
+var Memory = require( '@stdlib/wasm-memory' );
+var oneTo = require( '@stdlib/array-one-to' );
+var Complex64Array = require( '@stdlib/array-complex64' );
 
 // Create a new memory instance with an initial size of 10 pages (640KiB) and a maximum size of 100 pages (6.4MiB):
 var mem = new Memory({
@@ -270,9 +288,9 @@ The function has the following additional parameters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import oneTo from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-one-to@deno/mod.js';
-import Complex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@deno/mod.js';
-import scnrm2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-scnrm2@deno/mod.js';
+var oneTo = require( '@stdlib/array-one-to' );
+var Complex64Array = require( '@stdlib/array-complex64' );
+var scnrm2 = require( '@stdlib/blas-base-wasm-scnrm2' );
 
 function main() {
     var xbuf;
@@ -316,7 +334,7 @@ function main() {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -333,7 +351,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -346,8 +364,8 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/blas-base-wasm-scnrm2.svg
 [npm-url]: https://npmjs.org/package/@stdlib/blas-base-wasm-scnrm2
 
-[test-image]: https://github.com/stdlib-js/blas-base-wasm-scnrm2/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/blas-base-wasm-scnrm2/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/blas-base-wasm-scnrm2/actions/workflows/test.yml/badge.svg?branch=v0.1.0
+[test-url]: https://github.com/stdlib-js/blas-base-wasm-scnrm2/actions/workflows/test.yml?query=branch:v0.1.0
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/blas-base-wasm-scnrm2/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/blas-base-wasm-scnrm2?branch=main
@@ -359,8 +377,8 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 -->
 
-[chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
+[chat-image]: https://img.shields.io/badge/zulip-join_chat-brightgreen.svg
+[chat-url]: https://stdlib.zulipchat.com
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -385,13 +403,13 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
-[@stdlib/array/complex64]: https://github.com/stdlib-js/array-complex64/tree/deno
+[@stdlib/array/complex64]: https://github.com/stdlib-js/array-complex64
 
-[@stdlib/wasm/memory]: https://github.com/stdlib-js/wasm-memory/tree/deno
+[@stdlib/wasm/memory]: https://github.com/stdlib-js/wasm-memory
 
-[@stdlib/wasm/module-wrapper]: https://github.com/stdlib-js/wasm-module-wrapper/tree/deno
+[@stdlib/wasm/module-wrapper]: https://github.com/stdlib-js/wasm-module-wrapper
 
-[@stdlib/blas/base/scnrm2]: https://github.com/stdlib-js/blas-base-scnrm2/tree/deno
+[@stdlib/blas/base/scnrm2]: https://github.com/stdlib-js/blas-base-scnrm2
 
 </section>
 
