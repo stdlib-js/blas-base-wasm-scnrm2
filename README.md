@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import scnrm2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-scnrm2@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/blas-base-wasm-scnrm2/tags). For example,
+
+```javascript
 import scnrm2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-scnrm2@v0.1.1-deno/mod.js';
 ```
 
@@ -272,7 +277,7 @@ The function has the following additional parameters:
 ```javascript
 import oneTo from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-one-to@deno/mod.js';
 import Complex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@deno/mod.js';
-import scnrm2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-scnrm2@v0.1.1-deno/mod.js';
+import scnrm2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-scnrm2@deno/mod.js';
 
 function main() {
     var xbuf;
