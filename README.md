@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import scnrm2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-scnrm2@deno/mod.js';
+import scnrm2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-scnrm2@v0.1.1-deno/mod.js';
 ```
 
 #### scnrm2.main( N, x, strideX )
@@ -272,7 +272,7 @@ The function has the following additional parameters:
 ```javascript
 import oneTo from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-one-to@deno/mod.js';
 import Complex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@deno/mod.js';
-import scnrm2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-scnrm2@deno/mod.js';
+import scnrm2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-scnrm2@v0.1.1-deno/mod.js';
 
 function main() {
     var xbuf;
