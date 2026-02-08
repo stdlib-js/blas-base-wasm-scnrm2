@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import scnrm2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-scnrm2@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/blas-base-wasm-scnrm2/tags). For example,
+
+```javascript
 import scnrm2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-scnrm2@v0.1.1-esm/index.mjs';
 ```
 
@@ -277,7 +282,7 @@ The function has the following additional parameters:
 
 import oneTo from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-one-to@esm/index.mjs';
 import Complex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@esm/index.mjs';
-import scnrm2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-scnrm2@v0.1.1-esm/index.mjs';
+import scnrm2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-scnrm2@esm/index.mjs';
 
 function main() {
     var xbuf;
