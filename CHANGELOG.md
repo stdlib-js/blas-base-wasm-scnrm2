@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-07-16)
+## Unreleased (2026-07-21)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`5791dde`](https://github.com/stdlib-js/stdlib/commit/5791dde65a21b17fe40c7650a314c28922f1d62c) - **docs:** fix examples and descriptions [(#13601)](https://github.com/stdlib-js/stdlib/pull/13601) _(by Philipp Burckhardt)_
 -   [`94e67fd`](https://github.com/stdlib-js/stdlib/commit/94e67fd1ed8a206d4209c1071c378661cc9ab16b) - **build:** add scripts to insert license headers [(#13482)](https://github.com/stdlib-js/stdlib/pull/13482) _(by Prashant Kumar Yadav)_
 -   [`ec68ca7`](https://github.com/stdlib-js/stdlib/commit/ec68ca7cc35210db29a028d561ec71968e2ff753) - **docs:** fix TSDoc errors in `blas` declarations [(#12529)](https://github.com/stdlib-js/stdlib/pull/12529) _(by Philipp Burckhardt, Athan Reines)_
 -   [`b0713ea`](https://github.com/stdlib-js/stdlib/commit/b0713eab38c54a2e13a01a17df978df42dee4579) - **docs:** update descriptions to be consistent with elsewhere in project _(by Athan Reines)_
